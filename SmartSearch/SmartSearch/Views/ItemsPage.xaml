@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSearch.Views.ItemsPage"
+              Title="SmartSearch"
+             x:Name="PesquisaPage">
+
+    <ContentPage.Content>
+
+
+        <StackLayout VerticalOptions="FillAndExpand" Spacing="20" Padding="15"  BackgroundColor="White">
+                <Label Text="Pesquisar" FontSize="Large" TextColor="Black" ></Label>
+
+                <Entry Placeholder="Nome" 
+                   x:Name="EntryNome" 
+                   Text="{Binding Pesquisa.Nome, Mode=TwoWay}" />
+                <Entry Placeholder="Email" 
+                   x:Name="EntryEmail" 
+                   Text="{Binding Pesquisa.Email, Mode=TwoWay}" />
+                <Entry Placeholder="CPF" 
+                   x:Name="EntryCPF" 
+                   Text="{Binding Pesquisa.CPF, Mode=TwoWay}"/>
+               
+                <Entry Placeholder="Telefone" 
+                   x:Name="EntryTelefone" 
+                   Text="{Binding Pesquisa.Telefone, Mode=TwoWay}"/>
+
+                <Button Text="Pesquisar" 
+                    Command="{Binding PesquisarClickedCommand}" BackgroundColor="Orange"
+                        TextColor="White"/>
+            </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

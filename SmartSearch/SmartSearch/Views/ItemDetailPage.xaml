@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SmartSearch.Views.ItemDetailPage"
+             xmlns:vm="clr-namespace:SmartSearch.ViewModels"
+             Title="{Binding Title}">
+
+
+    <ContentPage.BindingContext>
+        <vm:ItemDetailViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatible with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+            <OnPlatform x:TypeArguments="x:String" 
+                x:Key="FontAwesomeRegular" Android="FontAwesome5Free-Solid-900.otf#Regular"
+                        iOS="FontAwesome5Free-Regular-400.otf">
+            </OnPlatform>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="Acessos" HorizontalOptions="Center" TextColor="Black" FontSize="Large" ></Label>
+        <ListView x:Name="ItemsListView"
+                ItemsSource="{Binding Acessos}"
+                VerticalOptions="FillAndExpand"
+                HasUnevenRows="true"
+                RefreshCommand="{Binding LoadItemsCommand}"
+                IsPullToRefreshEnabled="true"
+                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+                CachingStrategy="RecycleElement"
+                >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding Nome}" 
+                                LineBreakMode="NoWrap" 
+                                Style="{DynamicResource ListItemTextStyle}" 
+                                FontSize="Large" HorizontalOptions="Center" />
+                            <Label Text="{Binding Email}" 
+                                LineBreakMode="NoWrap" HorizontalOptions="Center"
+                                Style="{DynamicResource ListItemDetailTextStyle}"
+                                FontSize="Medium" />
+                           
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                                <Button Text="&#xf044; " 
+                                FontFamily="{StaticResource FontAwesomeRegular}"
+                                HorizontalOptions="Center" x:Name="button1"  BackgroundColor="Orange"></Button>
+                                <Button Text="&#xf1f8;" 
+                                FontFamily="{StaticResource FontAwesomeRegular}"
+                                HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="{Binding Path=Width, Source={x:Reference button1}"></Button>
+                            </StackLayout>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+
+</ContentPage>
