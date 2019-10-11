@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using SmartSearch.Views;
+using SmartSearch.ViewModels;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace SmartSearch
@@ -14,12 +15,16 @@ namespace SmartSearch
             InitializeComponent();
 
 
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            MessagingCenter.Subscribe<LoginViewModel>(this, "LoginSucesso",
+               (sender) =>
+               {
+                   MainPage = new MainPage();
+               });
         }
 
         protected override void OnSleep()
@@ -30,6 +35,18 @@ namespace SmartSearch
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        internal static void LoadGlobalVariables()
+        {
+            // Carregando a lista de Perfil para acesso Global
+          
+        }
+
+
+        internal static void MensagemAlerta(string texto)
+        {
+            App.Current.MainPage.DisplayAlert("Título", texto, "Ok");
         }
     }
 }

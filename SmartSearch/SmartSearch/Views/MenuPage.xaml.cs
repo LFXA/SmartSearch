@@ -19,8 +19,8 @@ namespace SmartSearch.Views
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.Pesquisa, Title="Pesquisa"},
-                new HomeMenuItem {Id = MenuItemType.Relatorio, Title="Relatórios" },
-                 new HomeMenuItem {Id = MenuItemType.ControleAcesso, Title="Controle de Acesso" }
+                new HomeMenuItem {Id = MenuItemType.Relatorio, Title="Relatórios"},
+                 new HomeMenuItem {Id = MenuItemType.ControleAcesso, Title="Controle de Acesso"}
             };
 
             ListViewMenu.ItemsSource = menuItems;
