@@ -11,13 +11,13 @@
         <StackLayout VerticalOptions="FillAndExpand" Spacing="20" Padding="15"  BackgroundColor="White">
                 <Label Text="Pesquisar" FontSize="Large" TextColor="Black" ></Label>
 
-                <Entry Placeholder="Nome" 
+                <Entry Placeholder="Nome/Nome da Empresa" 
                    x:Name="EntryNome" 
                    Text="{Binding Pesquisa.Nome, Mode=TwoWay}" />
                 <Entry Placeholder="Email" 
                    x:Name="EntryEmail" 
                    Text="{Binding Pesquisa.Email, Mode=TwoWay}" />
-                <Entry Placeholder="CPF" 
+                <Entry Placeholder="CPF/CNPJ" 
                    x:Name="EntryCPF" 
                    Text="{Binding Pesquisa.CPF, Mode=TwoWay}"/>
                

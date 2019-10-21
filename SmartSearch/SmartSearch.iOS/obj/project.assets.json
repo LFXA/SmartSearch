@@ -2084,11 +2084,12 @@
       ]
     },
     "System.Net.NameResolution/4.3.0": {
-      "sha512": "88AQnzzZ66j8hhkiXHQZdfAmHEqWMu8vSI2okyu1WTHt8/xsF/Yvt6KN/AG5xPNXHkA/Nqlcij71ctEC/n+caQ==",
+      "sha512": "AFYl08R7MrsrEjqpQWTZWBadqXyTzNDaWpMqyxhb0d6sGhV6xMDKueuBXlLL30gz+DIRY6MpdgnHWlCh5wmq9w==",
       "type": "package",
       "path": "system.net.nameresolution/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2157,11 +2158,12 @@
       ]
     },
     "System.Reflection.Emit.Lightweight/4.3.0": {
-      "sha512": "0JNkSo2BKrq8mlAifYcrKPM907n3q3Csl4V/0UPN33MpmNC0oUM8I0c66AsVas/sXcHCBYk5GBiFUTokozI/zQ==",
+      "sha512": "oadVHGSMsTmZsAF864QYN1t1QzZjIcuKU3l2S9cZOwDdDueNTrqq1yRj7koFfIGEnKpt6NjpL3rOzRhs4ryOgA==",
       "type": "package",
       "path": "system.reflection.emit.lightweight/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2306,11 +2308,12 @@
       ]
     },
     "System.Threading.Thread/4.3.0": {
-      "sha512": "l6mNbB/2ljX9sEx0Qkgz7oshdc1hhAxin5UUh/eltVCrMjLNgXFFNu8CXLq/cqd4MjY2KkpUcTQYCiY8UG1Dxg==",
+      "sha512": "OHmbT+Zz065NKII/ZHcH9XO1dEuLGI1L2k7uYss+9C1jLxTC9kTZZuzUOyXHayRk+dft9CiDf3I/QZ0t8JKyBQ==",
       "type": "package",
       "path": "system.threading.thread/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -2503,21 +2506,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lucas\\.nuget\\packages\\": {}
+    "C:\\Users\\lucas.aquino\\.nuget\\packages\\": {},
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lucas\\source\\repos\\SmartSearch\\SmartSearch\\SmartSearch.iOS\\SmartSearch.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\lucas.aquino\\Documents\\GitHub\\SmartSearch\\SmartSearch\\SmartSearch.iOS\\SmartSearch.iOS.csproj",
       "projectName": "SmartSearch.iOS",
-      "projectPath": "C:\\Users\\lucas\\source\\repos\\SmartSearch\\SmartSearch\\SmartSearch.iOS\\SmartSearch.iOS.csproj",
-      "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lucas\\source\\repos\\SmartSearch\\SmartSearch\\SmartSearch.iOS\\obj\\",
+      "projectPath": "C:\\Users\\lucas.aquino\\Documents\\GitHub\\SmartSearch\\SmartSearch\\SmartSearch.iOS\\SmartSearch.iOS.csproj",
+      "packagesPath": "C:\\Users\\lucas.aquino\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lucas.aquino\\Documents\\GitHub\\SmartSearch\\SmartSearch\\SmartSearch.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\lucas.aquino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -2529,8 +2537,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\lucas\\source\\repos\\SmartSearch\\SmartSearch\\SmartSearch\\SmartSearch.csproj": {
-              "projectPath": "C:\\Users\\lucas\\source\\repos\\SmartSearch\\SmartSearch\\SmartSearch\\SmartSearch.csproj"
+            "C:\\Users\\lucas.aquino\\Documents\\GitHub\\SmartSearch\\SmartSearch\\SmartSearch\\SmartSearch.csproj": {
+              "projectPath": "C:\\Users\\lucas.aquino\\Documents\\GitHub\\SmartSearch\\SmartSearch\\SmartSearch\\SmartSearch.csproj"
             }
           }
         }
