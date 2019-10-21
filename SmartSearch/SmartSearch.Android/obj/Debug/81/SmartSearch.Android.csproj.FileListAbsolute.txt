@@ -103,4 +103,3 @@ C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch.Android\obj\Debu
 C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch.Android\obj\Debug\81\linksrc\SmartSearch.dll.mdb
