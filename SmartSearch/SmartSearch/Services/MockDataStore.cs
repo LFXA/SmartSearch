@@ -10,9 +10,10 @@ namespace SmartSearch.Services
     {
         List<Relatorio> items;
 
-        public MockDataStore()
+        public MockDataStore(Dictionary<string, string> relatorios)
         {
             items = new List<Relatorio>();
+
             var mockItems = new List<Relatorio>
             {
                 new Relatorio { Id = 1, Nome="Fulano de tal", CPF="232.232.354-69", Data = new DateTime() },

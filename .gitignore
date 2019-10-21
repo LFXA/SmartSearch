@@ -13,3 +13,7 @@ SmartSearch/SmartSearch/obj/Debug/netstandard2.0/SmartSearch.dll
 SmartSearch/SmartSearch/obj/Debug/netstandard2.0/SmartSearch.csproj.CoreCompileInputs.cache
 SmartSearch/SmartSearch/bin/Debug/netstandard2.0/SmartSearch.pdb
 SmartSearch/SmartSearch/bin/Debug/netstandard2.0/SmartSearch.dll.mdb
+.vs/SmartSearch/v15/.suo
+.vs/SmartSearch/DesignTimeBuild/.dtbcache
+*.ide-wal
+*.apk

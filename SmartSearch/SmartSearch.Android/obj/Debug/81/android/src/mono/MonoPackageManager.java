@@ -107,8 +107,15 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "SmartSearch.Android.dll" comes first in this list. */
 		"SmartSearch.Android.dll",
+		"DnsClient.dll",
 		"FormsViewGroup.dll",
+		"MongoDB.Bson.dll",
+		"MongoDB.Driver.Core.dll",
+		"MongoDB.Driver.dll",
+		"Newtonsoft.Json.dll",
+		"SharpCompress.dll",
 		"SmartSearch.dll",
+		"System.Buffers.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

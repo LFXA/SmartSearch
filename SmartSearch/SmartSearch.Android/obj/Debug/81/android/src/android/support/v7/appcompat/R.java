@@ -3858,6 +3858,7 @@ containing a value of this type.
         public static int CardView=0x7f0c000b;
         public static int CardView_Dark=0x7f0c000d;
         public static int CardView_Light=0x7f0c000e;
+        public static int DrawerArrowStyle=0x7f0c0192;
         public static int MainTheme=0x7f0c018f;
         /**  Base theme applied no matter what API 
          */

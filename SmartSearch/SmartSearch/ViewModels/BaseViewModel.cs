@@ -7,13 +7,16 @@ using Xamarin.Forms;
 
 using SmartSearch.Models;
 using SmartSearch.Services;
+using SmartSearch.Business;
 
 namespace SmartSearch.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-       public IDataStore<Relatorio> DataStore => DependencyService.Get<IDataStore<Relatorio>>() ?? new MockDataStore();
+        public Dictionary<String, String> Relatorios = Global.Relatorios;
+        public IDataStore<Relatorio> DataStore => DependencyService.Get<IDataStore<Relatorio>>() ?? new MockDataStore(Relatorios);
         public IDataStore<Acesso> DataStoreAcesso => DependencyService.Get<IDataStore<Acesso>>() ?? new MockDataStoreAcesso();
+        public Pesquisar Pesquisar = new Pesquisar();
         bool isBusy = false;
         public bool IsBusy
         {
