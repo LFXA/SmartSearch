@@ -3,27 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmartSearch.Views.ItemsPage"
               Title="SmartSearch"
-             x:Name="PesquisaPage">
+             x:Name="PesquisaPage"
+      >
 
     <ContentPage.Content>
 
+        
 
         <StackLayout VerticalOptions="FillAndExpand" Spacing="20" Padding="15"  BackgroundColor="White">
                 <Label Text="Pesquisar" FontSize="Large" TextColor="Black" ></Label>
 
-                <Entry Placeholder="Nome/Nome da Empresa" 
+            <ActivityIndicator x:Name="actInd"
+                             IsRunning="{Binding IsBusy}"
+                             IsVisible="{Binding IsBusy}" Color="Orange"
+                              />
+
+            <Entry Placeholder="Nome" 
                    x:Name="EntryNome" 
                    Text="{Binding Pesquisa.Nome, Mode=TwoWay}" />
-                <Entry Placeholder="Email" 
-                   x:Name="EntryEmail" 
-                   Text="{Binding Pesquisa.Email, Mode=TwoWay}" />
-                <Entry Placeholder="CPF/CNPJ" 
+            <Entry Placeholder="Nome da Empresa" 
+                   x:Name="EntryNomeEmpresa" 
+                   Text="{Binding Pesquisa.NomeEmpresa, Mode=TwoWay}" />
+                <Entry Placeholder="CPF" 
                    x:Name="EntryCPF" 
                    Text="{Binding Pesquisa.CPF, Mode=TwoWay}"/>
-               
-                <Entry Placeholder="Telefone" 
-                   x:Name="EntryTelefone" 
-                   Text="{Binding Pesquisa.Telefone, Mode=TwoWay}"/>
+
+            <Entry Placeholder="CNPJ" 
+                   x:Name="EntryCNPJ" 
+                   Text="{Binding Pesquisa.CNPJ, Mode=TwoWay}"/>
 
                 <Button Text="Pesquisar" 
                     Command="{Binding PesquisarClickedCommand}" BackgroundColor="Orange"

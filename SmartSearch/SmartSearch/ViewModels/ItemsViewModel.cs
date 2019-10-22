@@ -41,6 +41,7 @@ namespace SmartSearch.ViewModels
             finally
             {
                 IsBusy = false;
+               
             }
         }
 

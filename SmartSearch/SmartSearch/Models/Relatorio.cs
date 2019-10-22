@@ -10,5 +10,10 @@ namespace SmartSearch.Models
         public string Nome { get; set; }
         public String CPF { get; set; }
         public DateTime Data { get; set; }
+        public string Telefone { get;  set; }
+        public string RazaoSocial { get; internal set; }
+        public string CNPJ { get; internal set; }
+        public string Logradouro { get; internal set; }
+        public string CEP { get; internal set; }
     }
 }

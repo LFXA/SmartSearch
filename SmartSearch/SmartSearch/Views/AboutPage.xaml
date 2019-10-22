@@ -31,6 +31,7 @@
                 IsPullToRefreshEnabled="true"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
                 CachingStrategy="RecycleElement"
+                  ItemSelected="OnItemSelected"
                 >
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -51,7 +52,7 @@
                         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                         <Button Text="&#xf019; " 
                                 FontFamily="{StaticResource FontAwesomeRegular}"
-                                HorizontalOptions="Center" x:Name="button1"  BackgroundColor="Orange"></Button>
+                                HorizontalOptions="Center" x:Name="button1"  BackgroundColor="Orange" Clicked="DetailCliked"></Button>
                         <Button Text="&#xf1f8;" 
                                 FontFamily="{StaticResource FontAwesomeRegular}"
                                 HorizontalOptions="Center" BackgroundColor="Orange" WidthRequest="{Binding Path=Width, Source={x:Reference button1}"></Button>

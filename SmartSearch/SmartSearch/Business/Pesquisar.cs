@@ -18,7 +18,7 @@ namespace SmartSearch.Business
             var endPoints = new string[] { "arisp", "arpenp", "caged", "censec", "detran", "infocrim", "jucesp", "siel", "sivec" };
             var uri = String.Format("https://smartsearchfiap.ddns.net/api/");
             HttpClient client = new HttpClient();
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("x-api-key", "QfatjqNAFBkAA40zON5z");
+            client.DefaultRequestHeaders.Add("x-api-key", "QfatjqNAFBkAA40zON5z");
             foreach (var endPoint in endPoints)
             {
                 var contentPost = bodyRequestEndPoint(pesquisa, endPoint);
@@ -42,7 +42,7 @@ namespace SmartSearch.Business
                     conteudoJson = JsonConvert.SerializeObject(new
                     {
                         cpf = pesquisa.CPF,
-                        cnpj = pesquisa.CPF
+                        cnpj = pesquisa.CNPJ
                     });
                     break;
                 case "caged":
@@ -52,7 +52,7 @@ namespace SmartSearch.Business
                     conteudoJson = JsonConvert.SerializeObject(new
                     {
                         cpf = pesquisa.CPF,
-                        cnpj = pesquisa.CPF
+                        cnpj = pesquisa.CNPJ
                     });
                     break;
                 case "arpenp":
@@ -64,7 +64,7 @@ namespace SmartSearch.Business
                 case "cadesp":
                     conteudoJson = JsonConvert.SerializeObject(new
                     {
-                        cnpj = pesquisa.CPF
+                        cnpj = pesquisa.CNPJ
                     });
                     break;
                 case "siel":
@@ -77,8 +77,8 @@ namespace SmartSearch.Business
                 case "jucesp":
                     conteudoJson = JsonConvert.SerializeObject(new
                     {
-                        nome_empresa = pesquisa.Nome,
-                        cnpj = pesquisa.CPF
+                        nome_empresa = pesquisa.NomeEmpresa,
+                        cnpj = pesquisa.CNPJ
                     });
                     break;
             }

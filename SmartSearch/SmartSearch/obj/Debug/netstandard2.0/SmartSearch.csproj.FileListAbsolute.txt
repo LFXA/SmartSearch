@@ -15,3 +15,4 @@ C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch\obj\Debug\netsta
 C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch\obj\Debug\netstandard2.0\SmartSearch.pdb
 C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
 C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\lucas\source\repos\SmartSearch\SmartSearch\SmartSearch\obj\Debug\netstandard2.0\Views\DetalheRelatorioPage.xaml.g.cs

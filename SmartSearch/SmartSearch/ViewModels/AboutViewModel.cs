@@ -12,15 +12,16 @@ namespace SmartSearch.ViewModels
     {
         public ObservableCollection<Relatorio> Relatorios { get; set; }
         public Command LoadItemsCommand { get; set; }
-
+       
         public AboutViewModel()
         {
             Title = "SmartSearch";
             Relatorios = new ObservableCollection<Relatorio>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-
-
+          
         }
+
+       
         async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
