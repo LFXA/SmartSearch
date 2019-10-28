@@ -18,7 +18,8 @@ namespace SmartSearch.Services
         {
             items = new List<Relatorio>();
             RelatorioPesquisado = new Relatorio();
-            FazerObjeto(relatorios);
+            if (relatorios != null)
+                FazerObjeto(relatorios);
             Global.Relatorio = RelatorioPesquisado;
             if (RelatorioPesquisado.Nome == null)
             {
@@ -34,7 +35,7 @@ namespace SmartSearch.Services
 
                 foreach (var item in mockItems)
                 {
-                    if (Global.Relatorio == null)
+                    if (Global.Relatorio == RelatorioPesquisado)
                         Global.Relatorio = item;
                     items.Add(item);
                 }

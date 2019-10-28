@@ -4,22 +4,26 @@
              x:Class="SmartSearch.Views.DetalheRelatorioPage">
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="Nome:" FontSize="Medium" />
-            <Label Text="{Binding Item.Nome}" FontSize="Small"/>
-            <Label Text="CPF:" FontSize="Medium" />
-            <Label Text="{Binding Item.CPF}" FontSize="Small"/>
-            <Label Text="Data:" FontSize="Medium" />
-            <Label Text="{Binding Item.Data}" FontSize="Small"/>
-            <Label Text="Telefone:" FontSize="Medium" />
-            <Label Text="{Binding Item.Telefone}" FontSize="Small"/>
-            <Label Text="Razão Social:" FontSize="Medium" />
-            <Label Text="{Binding Item.RazaoSocial}" FontSize="Small"/>
-            <Label Text="CNPJ:" FontSize="Medium" />
-            <Label Text="{Binding Item.CNPJ}" FontSize="Small"/>
-            <Label Text="Logradouro:" FontSize="Medium" />
-            <Label Text="{Binding Item.Logradouro}" FontSize="Small"/>
-            <Label Text="CEP:" FontSize="Medium" />
-            <Label Text="{Binding Item.CEP}" FontSize="Small"/>
+            <ScrollView  Orientation = "Vertical" VerticalOptions="StartAndExpand">
+                <StackLayout>
+                    <Label Text="Nome:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Nome}" FontSize="Small"/>
+                    <Label Text="CPF:" FontSize="Medium" />
+                    <Label Text="{Binding Item.CPF}" FontSize="Small"/>
+                    <Label Text="Data:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Data}" FontSize="Small"/>
+                    <Label Text="Telefone:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Telefone}" FontSize="Small"/>
+                    <Label Text="Razão Social:" FontSize="Medium" />
+                    <Label Text="{Binding Item.RazaoSocial}" FontSize="Small"/>
+                    <Label Text="CNPJ:" FontSize="Medium" />
+                    <Label Text="{Binding Item.CNPJ}" FontSize="Small"/>
+                    <Label Text="Logradouro:" FontSize="Medium" />
+                    <Label Text="{Binding Item.Logradouro}" FontSize="Small"/>
+                    <Label Text="CEP:" FontSize="Medium" />
+                    <Label Text="{Binding Item.CEP}" FontSize="Small"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

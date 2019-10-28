@@ -13,8 +13,8 @@ namespace SmartSearch.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public Dictionary<String, String> Relatorios = Global.Relatorios;
-        public IDataStore<Relatorio> DataStore => DependencyService.Get<IDataStore<Relatorio>>() ?? new MockDataStore(Relatorios);
+   
+        public IDataStore<Relatorio> DataStore => DependencyService.Get<IDataStore<Relatorio>>() ?? new MockDataStore(Global.Relatorios);
         public IDataStore<Acesso> DataStoreAcesso => DependencyService.Get<IDataStore<Acesso>>() ?? new MockDataStoreAcesso();
         public Pesquisar Pesquisar = new Pesquisar();
         bool isBusy = false;

@@ -19,8 +19,8 @@ namespace SmartSearch.Views
         {
             base.OnAppearing();
 
-            if (viewModel.Relatorios.Count == 0)
-                viewModel.LoadItemsCommand.Execute(null);
+
+            viewModel.LoadItemsCommand.Execute(null);
         }
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
@@ -36,10 +36,10 @@ namespace SmartSearch.Views
 
         async void DetailCliked(object sender, System.EventArgs e)
         {
-            
+
             await Navigation.PushAsync(new DetalheRelatorioPage(new DetalheRelatorioViewModel(Global.Relatorio)));
 
-          
+
         }
     }
 }
